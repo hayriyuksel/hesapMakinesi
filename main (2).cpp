@@ -32,36 +32,33 @@ int main()
     for(int i=0; i<4;i++) {
         cout<<islemler[i]<<endl;
     }
-    string secilenislem;
-    cin>>secilenislem;
+    string secilenIslem;
+    cin>>secilenIslem;
     int sayi1;
     int sayi2;
-    if(secilenislem==islemler[0]) {
+    if(secilenIslem==islemler[0]) {
         cin>>sayi1;
         cin>>sayi2;
         cout<<"Sonuc="<< toplama(sayi1,sayi2)<<endl;
     }
-   if(secilenislem==islemler[0]) {
-        cin>>sayi1;
-        cin>>sayi2;
-        cout<<"Sonuc="<< toplama(sayi1,sayi2)<<endl;
-    }
-    else if(secilenislem==islemler[1]) {
+    else if(secilenIslem==islemler[1]) {
         cin>>sayi1;
         cin>>sayi2;
         cout<<"Sonuc="<< cikarma(sayi1,sayi2)<<endl;
     }
-    else if(secilenislem==islemler[2]); {
+    else if(secilenIslem==islemler[2]){
         cin>>sayi1;
         cin>>sayi2;
         cout<<"Sonuc="<< bolme(sayi1,sayi2)<<endl;
     }
-    if (secilenislem==islemler[3]); {
+    else if(secilenIslem==islemler[3]) {
         cin>>sayi1;
         cin>>sayi2;
         cout<<"Sonuc="<< carpma(sayi1,sayi2)<<endl;
     }
-    
+    else {
+        cout<<"Hatali giris.";
+    }
 
     return 0;
 }
